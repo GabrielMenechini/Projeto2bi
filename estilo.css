@@ -1,0 +1,275 @@
+body {
+  background: #131424;
+  font-family: "Jaro", sans-serif text-align center;
+  text-decoration: none;
+}
+
+h1 {
+  color: #333cf5;
+  font-family: "Jaro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  color: #333cf5;
+  font-family: "Jaro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+img {
+  width: 80%;
+  margin: auto;
+  padding: 2px;
+  display: block;
+}
+
+header {
+  background-color: #28285e;
+  text-align: center;
+  font-family: "Jaro", sans-serif;
+  text-decoration: none;
+}
+
+.container {
+  column-count: 2;
+  column-width: 400px;
+  font-family: "Jaro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.img10 {
+  width: 40%;
+}
+
+a {
+  font-family: "Jaro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #333cf5;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.imgmin {
+  width: 40%;
+  margin: auto;
+}
+
+.bodycor {
+  background-color: #131424;
+  text-decoration: none;
+}
+
+.deconone {
+  text-decoration: none;
+}
+
+.darkblue {
+  background-color: #28285e;
+}
+
+.navbar {
+  background-color: #28285e;
+}
+.navbar .nav-link {
+  color: #333cf5;
+}
+
+.img5 {
+  width: 15%;
+  float: left;
+}
+
+.dropdown {
+  text-align: center;
+}
+
+.btn.btn-secondary {
+  background-color: #333cf5;
+}
+
+.dropdown-menu.show {
+  background-color: #333cf5;
+  color: #28285e;
+}
+
+.dropdown-item {
+  background-color: #131424;
+}
+
+.azultitle {
+  color: #333cf5;
+}
+
+.azulclaro {
+  color: #0d6efd;
+}
+
+.container2 {
+  column-count: 2;
+  column-width: 400px;
+  font-family: "Jaro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+/* Galeria */
+.gallery {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 90%;
+  max-height: 28vw;
+  overflow: hidden;
+}
+
+.gallery__stream {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+/* Itens */
+.gallery__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(0.8);
+}
+
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.8);
+}
+
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1);
+}
+
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(0.8);
+}
+
+.gallery__item:nth-child(n + 5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+/* Backgrounds */
+.bg-1 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718735333/Crimson_Curse_print_mpkrsr.png);
+}
+
+.bg-2 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718735433/CYBERGUN_PRINT_ysp9dd.png);
+}
+
+.bg-3 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718735877/KIng_Games_grande_azul_q5079y.png);
+}
+
+.bg-4 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718841957/pnj9ogpuypyeob6b8fuh.png);
+}
+
+.bg-5 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718735743/Ghost_Of_Hell_we2jnq.png);
+}
+
+.bg-6 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718735624/Mewotopia_yjhk6p.png);
+}
+
+.bg-7 {
+  background-image: url(https://res.cloudinary.com/deszzdxvj/image/upload/v1718735613/Flyngchiken_l33yyq.png);
+}
+
+/* Controles */
+.gallery__prev,
+.gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  cursor: pointer;
+}
+
+.gallery__prev {
+  left: 0;
+}
+
+.gallery__next {
+  left: 100%;
+}
+
+/* Sombras */
+.gallery:before,
+.gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+
+.gallery:before {
+  left: 0;
+  background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery:after {
+  right: 0;
+  background: linear-gradient(to left, black 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.imgicon {
+  width: 7%;
+  margin: auto;
+}
+
+.imgicon2 {
+  width: 15%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=estilo.css.map */
